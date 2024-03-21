@@ -1,0 +1,43 @@
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" init-scale="1" user-scale="0">
+        <title>面试</title>
+    </head>
+    <body>     
+        <input type="file" id="upload"/>
+        <button id="btn">裁剪</button>
+        
+    </body>
+    <script>
+        const cut = document.querySelector('#btn')
+        const upBtn = document.querySelector('#upload')
+
+        upBtn.onchange = e => {
+            const file = e.target.files[0]
+            const p = document.createElement('p'),img = document.createElement('img')
+            let str = ''
+            for(let key in file) {
+                str += `${key}=${file[key]}<br>`
+            }
+            p.innerHTML = str
+            document.body.appendChild(p)
+            const reader = new FileReader()
+            reader.onload = el => {
+                img.src = el.target.result
+                document.body.appendChild(img)
+                cutImg({ img, cutWidth: 100, cutHeigh: 100, cutX: 10, cutY: 10})
+            }
+            reader.readAsDataURL(file)
+        }
+
+        function cutImg({img, cutWidth, cutHeigh, cutX, cutY}) {
+            const cas = document.createElement('canvas')
+            const ctx = cas.getContext('2d')
+            ctx.width = 100
+            ctx.height = 100
+            ctx.drawImage(img, cutX, cutY, cutWidth, cutHeigh, 0, 0, ctx.width, ctx.height)
+            document.body.append(cas)
+        }
+    </script>
+</html>

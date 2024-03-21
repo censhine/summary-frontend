@@ -1,0 +1,38 @@
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" init-scale="1" user-scale="0">
+        <title>面试</title>
+    </head>
+    <body>     
+        <div id="container" style="border: 1px solid #ededed; width: 300px; height: 300px;"></div>
+        
+    </body>
+    <script>
+        const dom = document.querySelector('#container');
+        // 当目标进入元素时触发（一次）
+        dom.ondragenter = e => {
+            e.preventDefault();
+            console.log('enter')
+        }
+        // 当目标处于元素上方时一直触发（多次）
+        dom.ondragover = e => {
+            e.preventDefault();
+            console.log('over')
+        }
+        // 当目标进入到元素里面放手时触发 （一次）
+        dom.ondrop = e => {
+            e.preventDefault();
+            const items = e.dataTransfer.items // 伪数组
+            for(let item of items) {
+                const entery = item.webkitGetAsEntry()
+                if(entery.isFile) {
+                    entery.file(file=>{
+                        console.log(file) // 最终拖拽的文件对象
+                    })
+                }
+            }
+            console.log('drop')
+        }
+    </script>
+    </html>

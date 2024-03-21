@@ -1,0 +1,134 @@
+{
+    "category": [
+      {
+        "id": 1,
+        "title": "小份菜套餐",
+        "items": [
+            {
+                "id": 10001,
+                "title": "自选双拼盖码饭套餐",
+                "price": 38.9,
+                "img": "http://127.0.0.1:3000/assets/img/1.png"
+            },
+            {
+                "id": 10002,
+                "title": "农家一碗香盖码饭",
+                "price": 48.9,
+                "img": "http://127.0.0.1:3000/assets/img/2.png"
+            },
+            {
+                "id": 10003,
+                "title": "紫茄子肉沫盖码饭",
+                "price": 37.9,
+                "img": "http://127.0.0.1:3000/assets/img/3.png"
+            },
+            {
+                "id": 10001,
+                "title": "鹿茸菌炒肉盖码饭",
+                "price": 18.9,
+                "img": "http://127.0.0.1:3000/assets/img/7.png"
+            },
+            {
+                "id": 10002,
+                "title": "花菜炒肉盖码饭",
+                "price": 32.9,
+                "img": "http://127.0.0.1:3000/assets/img/6.png"
+            },
+            {
+                "id": 10003,
+                "title": "紫茄子肉沫盖码饭",
+                "price": 27.9,
+                "img": "http://127.0.0.1:3000/assets/img/5.png"
+            },
+            {
+                "id": 10004,
+                "title": "辣椒炒肉盖码饭",
+                "price": 37.5,
+                "img": "http://127.0.0.1:3000/assets/img/4.png"
+            }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "湖南土菜",
+        "items": [
+            {
+                "id": 10001,
+                "title": "自选双拼盖码饭套餐",
+                "price": 38.9,
+                "img": "http://127.0.0.1:3000/assets/img/3.png"
+            },
+            {
+                "id": 10002,
+                "title": "农家一碗香盖码饭",
+                "price": 48.9,
+                "img": "http://127.0.0.1:3000/assets/img/7.png"
+            },
+            {
+                "id": 10003,
+                "title": "紫茄子肉沫盖码饭",
+                "price": 37.9,
+                "img": "http://127.0.0.1:3000/assets/img/5.png"
+            }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "招牌盖饭",
+        "items": [
+            {
+                "id": 10001,
+                "title": "紫茄子肉沫+配菜+例汤套餐",
+                "price": 38.9,
+                "img": "http://127.0.0.1:3000/assets/img/6.png"
+            },
+            {
+                "id": 10002,
+                "title": "辣椒炒肉+配菜+例汤套餐",
+                "price": 48.9,
+                "img": "http://127.0.0.1:3000/assets/img/4.png"
+            },
+            {
+                "id": 10003,
+                "title": "紫茄子肉沫盖码饭",
+                "price": 37.9,
+                "img": "http://127.0.0.1:3000/assets/img/2.png"
+            }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "大份多人套餐",
+        "items": [
+            {
+                "id": 10001,
+                "title": "自选双拼盖码饭套餐",
+                "price": 38.9,
+                "img": "http://127.0.0.1:3000/assets/img/3.png"
+            },
+            {
+                "id": 10002,
+                "title": "农家一碗香盖码饭",
+                "price": 48.9,
+                "img": "http://127.0.0.1:3000/assets/img/5.png"
+            },
+            {
+                "id": 10003,
+                "title": "紫茄子肉沫盖码饭",
+                "price": 37.9,
+                "img": "http://127.0.0.1:3000/assets/img/7.png"
+            }
+        ]
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
